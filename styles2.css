@@ -1,0 +1,141 @@
+ul{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+    border-bottom: dotted white;
+
+}
+
+* {
+    background-color: #226BC5;
+}
+
+li a {
+    color: white;
+    text-decoration:none;
+    transition:  4s;
+
+
+}
+
+li a:hover{
+    background-color: white;
+    color: black;
+}
+
+nav li{
+    list-style: none;
+    
+}
+
+h1{
+    text-align: center;
+    color: white;
+}
+
+
+table{
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+th, td{
+    border-bottom: 1px solid white;
+    padding: 10px;
+    color: white;
+}
+
+img{
+    object-fit: cover;
+    width: 300px;
+    height: 300px;
+    border-radius: 10%;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+}
+
+.card{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    transition: transform linear 1s;
+    transform-style: preserve-3d;
+    border-radius: 10%;
+}
+
+
+.card:hover{
+    transform: scale(1.4);
+
+}
+
+article .name {
+    text-align: center; 
+    color: white;
+    padding: 5%;
+}
+/* Selects the first letter of each <p> element */
+.name p::first-letter {
+    color: black;
+    font-weight: 800;
+    font-style: italic;
+    font-size: large;
+}
+
+/* Selects the first line of each <p> element */
+.name p::first-line{
+    background-color: green;
+}
+
+/* Selects the portion of an element that is selected by a user */
+.name p::selection{
+    color: darkorange;
+}
+
+/* Selects the markers of list items */
+article li::marker{
+    color: red;
+    font-size: 30px;
+}
+/* Selects all unvisited links */
+#google  a:link{
+
+    color: white;
+
+}
+#google {
+    text-align: center;
+    font-size: larger;
+}
+
+/* Selects every element that is not a <p> element */
+article :not(p){
+    color: white;
+}
+
+/* Selects links on mouse over */
+article button:hover{
+    background-color: white;
+    color: green;
+}
+article button{
+    display: block;
+    margin: auto;
+    border: 3px solid white;   
+
+}
+
+/* Selects every <li> elements that is the first child of its parent */
+article li:first-child{
+    color: green;
+}
+
+/* Selects every <li> element that is the third child of its parent */
+article li:nth-child(3){
+    text-decoration: underline;
+}
